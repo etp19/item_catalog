@@ -1,0 +1,141 @@
+.navbar {
+  margin-bottom: 0 !important; }
+
+.jumbotron {
+  min-height: 600px;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: none;
+  display: block;
+  margin-bottom: 0; }
+
+.jumbotron h1 {
+  color: white; }
+.jumbotron p {
+  color: white; }
+
+.hero-image {
+  position: relative; }
+  .hero-image img {
+    max-height: 1000px;
+    display: block;
+    width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center; }
+  .hero-image .hero-content {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .hero-image .hero-title {
+    font-weight: 300;
+    color: #863b24;
+    font-size: 2.4rem; }
+    @media (min-width: 530px) {
+      .hero-image .hero-title {
+        font-size: 8.5rem; } }
+  .hero-image .hero-subtitle {
+    top: 40%;
+    margin: 0;
+    color: #0b0b10; }
+
+.wrapper {
+  background-color: #101010 !important; }
+
+.deals {
+  background-color: #eee; }
+
+.demo {
+  width: 100%; }
+
+.top-margin {
+  margin-top: 50px !important; }
+
+#about {
+  background-color: #F05f40;
+  color: #eee;
+  min-height: 270px; }
+
+.title-about {
+  margin-top: 30px; }
+
+.subtitle-about {
+  margin-top: 10px; }
+
+#menu {
+  background-color: white;
+  color: black;
+  min-height: 500px; }
+
+.equal {
+  height: 150px; }
+
+.title-menu {
+  margin-top: 20px; }
+
+.subtitle-menu {
+  margin-top: 30px; }
+
+.margin-b {
+  margin-bottom: 20px; }
+
+#contact {
+  background-color: #101010;
+  color: #eee;
+  min-height: 200px; }
+
+#sidebar-menu {
+  z-index: 1;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  overflow-y: hidden;
+  background: #2C3E50;
+  opacity: 0.9;
+  padding-top: 50px; }
+
+#wrapper.menuDisplayed #sidebar-menu {
+  width: 250px; }
+
+#wrapper.menuDisplayed #content-wrapper {
+  padding-left: 250px; }
+
+.sidebar-nav {
+  padding: 0;
+  list-style: none; }
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px; }
+
+.sidebar-nav a {
+  display: block;
+  text-decoration: none;
+  color: #eee; }
+
+.sidebar-nav li a:hover {
+  background: #16A085; }
+
+legend {
+  color: #eee;
+  padding-top: 20px;
+  padding-left: 8px; }
+
+/* Content page properties for restaurants template */
+#content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px; }
+
+.restaurant-list {
+  margin-top: 20px; }
+
+legend h1 {
+  color: #1b6d85 !important; }
+
+/*# sourceMappingURL=style.css.map */
