@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from pkg.mod_auth.models import Base 
-from pkg.mod_auth.models import User 
+from pkg.mod_auth.models import Base
+from pkg.mod_auth.models import User
 from pkg.restaurant.models import Restaurant, RestaurantAddress
 from pkg.menu_item.models import MenuItem
 

@@ -1,77 +1,66 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="jumbotron hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>This is the main page {{ i }}</h1>
-                    <p>Manage your restaurant</p>
-                    <p>
-                        <a class="btn btn-primary btn-lg">Learn more</a>
-                    </p>
-                </div>
-                <div class="col-lg-6"></div>
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>Welcome</h1>
+                <h2>Enjoy places to eat near you</h2>
+                <a class="ghost-btn-white" href="{{ url_for('restaurant_b.show_restaurants') }}">See our list</a>
             </div>
         </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-right" src="../static/img/look-500x500.jpg">
+            <h2 class="featurette-heading">Stay here and quick something
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">With the largest restaurant database in the country you will have plenty of places to chose from.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left" src="../static/img/restaurant-600x600.jpg">
+            <h2 class="featurette-heading">Have your own Restaurant?
+                <span class="text-muted">Promote it here free of charge</span>
+            </h2>
+            <p class="lead">We are growing our consumer market every second, come join and grow with us. </p>
+            <a class="ghost-btn-black" href="{{ url_for('auth.show_login') }}">Create free account</a>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-right" src="../static/img/food-500x500.jpg">
+            <h2 class="featurette-heading">taste the best food
+                <span class="text-muted">money can buy</span>
+            </h2>
+            <p class="lead">American food DONE, Mexican food DONE, Italian food DONE DONE DONE!!! Everything you could ask for is right here.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    <section class="deals">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-center">Feature Deals</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ">
-                    <img class="img-responsive center-block" src="../static/img/deal--web-150x150.png">
-
-                </div>
-                <div class="col-lg-4 ">
-                    <img class="img-responsive center-block" src="../static/img/pizza-deal-160x150.png">
-
-                </div>
-                <div class="col-lg-4">
-                    <img class="img-responsive center-block" src="../static/img/hamburger-deals-150x150.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ">
-                    <h3 class="text-center">Learn More</h3>
-
-                </div>
-                <div class="col-lg-4 ">
-                    <h3 class="text-center">Learn More</h3>
-
-                </div>
-                <div class="col-lg-4">
-                    <h3 class="text-center">Learn More</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="how-this-work">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-center">How it Works</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <img class="img-responsive center-block" src="../static/img/how--works-1-170x170.png">
-                    <h3>Find what you like</h3>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <img class="img-responsive center-block" src="../static/img/how--works-3-170x170.png">
-                    <h3>Go and Buy it</h3>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <img class="img-responsive center-block" src="../static/img/how--works-2-170x170.png">
-                    <h3>Enjoy it</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- /.container -->
 
 {% endblock %}

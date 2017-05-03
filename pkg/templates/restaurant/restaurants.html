@@ -43,7 +43,9 @@
 
                     <ul>
                     {% for message in messages %}
-                        <li> <strong> {{ message }} </strong> </li>
+                        <div class="alert alert-warning">
+                            <li> <strong> {{ message }} </strong> </li>
+                        </div>
                     {% endfor %}
                     </ul>
                 {% endif %}
@@ -71,8 +73,9 @@
                                 <br>
                                 <p>Read Reviews</p>
                             </div>
-                            <div class="col-md-3 pull-right">
+                            <div class="col-md-4 pull-right">
                                 <a href="{{ url_for('.restaurant_detail', restaurant_id = restaurant.id)}}" class="btn btn-primary" id="menu-toggle">Menu</a>
+                                <a href="{{ url_for('.edit_restaurant', restaurant_id = restaurant.id)}}" class="btn btn-success" id="menu-toggle">Edit</a>
                             </div>
                         </div>
                     </div>

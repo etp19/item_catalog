@@ -16,7 +16,31 @@ api_b = Blueprint('api_b', __name__)
 def developer_page():
     """Created route for the official developer page
     where I explain how to use the api"""
-    return "<h1>Official Developer Page</h1>"
+    return render_template("api/developers.html")
+
+
+@api_b.route('/<int:restaurant_id>/JSON')
+def restaurant_info(restaurant_id):
+    """reated route and function for api endpoint,
+        it will be use to display restaurants info"""
+    try:
+        restaurants = app.db_session.query(Restaurant).filter_by(id=restaurant_id).one()
+        restaurants_info = jsonify(restaurant_info=restaurants.serialize)
+        return restaurants_info
+    except:
+        return "Info not found"
+
+
+@api_b.route('/location/<int:restaurant_id>/JSON')
+def restaurant_location(restaurant_id):
+    """reated route and function for api endpoint,
+        it will be use to display restaurants info"""
+    try:
+        address = app.db_session.query(RestaurantAddress).filter_by(restaurant_id=restaurant_id).one()
+        restaurant_address = jsonify(location=address.serialize)
+        return restaurant_address
+    except:
+        return "Info not found"
 
 
 @api_b.route('/<int:restaurant_id>/menu/JSON')

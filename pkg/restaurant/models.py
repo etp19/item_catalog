@@ -6,7 +6,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from pkg import app
-from pkg import db
 from pkg.auth.models import User, Base
 
 
@@ -29,6 +28,10 @@ class Restaurant(Base):
         return {
             'name': self.name,
             'id': self.id,
+            'phone': self.phone,
+            'email': self.email,
+            'website': self.website,
+            'description': self.description,
         }
 
     @staticmethod
@@ -50,3 +53,13 @@ class RestaurantAddress(Base):
     id = Column(Integer, primary_key = True)
     restaurant_id = Column(Integer, ForeignKey('restaurant.id'))
     restaurant = relationship(Restaurant)
+
+    @property
+    def serialize(self):
+        """Return object data in easily serializeable format"""
+        return {
+            'street': self.street,
+            'city': self.city,
+            'state': self.state,
+            'zip code': self.zip_code,
+        }

@@ -1,23 +1,21 @@
-# OAuth -- modified
-Based on Starter Code for Auth&amp;Auth course
-Some bugs fixed, including google+ authorization flow javascript code.  
-The main change is to restructure the app into modules, following example given in: https://www.digitalocean.com/community/tutorials/how-to-structure-large-flask-applications
-# Installing the Vagrant VM for ud330 - Authentication & Authorization
+# Item Catalog Project
 
 **Note: If you already have a vagrant machine installed from previous Udacity courses skip to the 'Fetch the Source Code and VM Configuration' section**
 
-In Lessons 2,3 and 4 of this course, you'll use a virtual machine (VM) to run a web server and a web app that uses it. The VM is a Linux system that runs on top of your own machine.  You can share files easily between your computer and the VM.
+This project I put in practice CRUD operations and I implemented third party authentication system provided by Facebook. In general 
+this application is a web app where users can browse for restaurants and if they want the can create their own restaurants.
+The app has APIs available to use, allowing other apps to communicate using RESTful Web services.  
 
-We're using the Vagrant software to configure and manage the VM. Here are the tools you'll need to install to get it running:
+### Flask
 
-### Git
+I used the python web framework flask which is a small lightweight framework used by many companies due to the freedon this can offer
+if you want to know more about flask you can visit it is official [website](http://flask.pocoo.org/)
 
-If you don't already have Git installed, [download Git from git-scm.com.](http://git-scm.com/downloads) Install the version for your operating system.
+####Extesions Used
 
-On Windows, Git will provide you with a Unix-style terminal and shell (Git Bash).  
-(On Mac or Linux systems you can use the regular terminal program.)
-
-You will need Git to install the configuration for the VM. If you'd like to learn more about Git, [take a look at our course about Git and Github](http://www.udacity.com/course/ud775).
+* Flask-WTF
+* flask-sqlalchemy
+* flask-bootstrap
 
 ### VirtualBox
 
@@ -33,14 +31,14 @@ Vagrant is the software that configures the VM and lets you share files between 
 
 ## Fetch the Source Code and VM Configuration
 
-**Windows:** Use the Git Bash program (installed with Git) to get a Unix-style terminal.  
+**Windows:** Use the Git Bash program (installed with Git) to get a Unix-style terminal.
 **Other systems:** Use your favorite terminal program.
 
 From the terminal, run:
 
     git clone https://github.com/udacity/OAuth2.0 oauth
 
-This will give you a directory named **oauth** complete with the source code for the flask application, a vagrantfile, and a bootstrap.sh file for installing all of the necessary tools. 
+This will give you a directory named **oauth** complete with the source code for the flask application, a vagrantfile, and a bootstrap.sh file for installing all of the necessary tools.
 
 ## Run the virtual machine!
 

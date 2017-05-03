@@ -2,9 +2,10 @@
 {% block content %}
     <div class="container">
     <form method="POST" action="{{ url_for('.delete_restaurant', restaurant_id=restaurant.id) }}">
-        <h1>Are you sure that you want to delete {{ restaurant.name }}?</h1>
+        <h1 class="featurette-heading">Are you sure that you want to delete <span class="text-muted">{{ restaurant.name }}</span>?</h1>
         <button type="submit" class="btn btn-success">Yes Delete</button>
+        <a class="btn btn-danger" href="{{ url_for('.show_restaurants') }}">Cancel</a>
     </form>
-        <button type="submit"class="btn btn-danger"><a href="{{ url_for('.show_restaurants') }}">Cancel</a></button>
+
     </div>
 {% endblock %}

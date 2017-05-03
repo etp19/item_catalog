@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
 {% block content %}
 
 
@@ -57,15 +56,24 @@
   }
 </script>
 
+<div class="container">
+    <div class="row">
+        <div class="fb-login text-center">
+            <h1>Access to restaurants.com</h1>
+            <div class="btn-toolbar">
+                <button class="fb-btn">
+                <fb:login-button scope="public_profile,email" onlogin="sendTokenToServer();">
+                    <a href='javascript:sendTokenToServer()'>Login with Facebook</a>
 
-<button>
+                </fb:login-button>
 
 
-          <fb:login-button scope="public_profile,email" onlogin="sendTokenToServer();">
-<a href='javascript:sendTokenToServer()'>Login with Facebook</a>
+            </button>
+            <button class=""><a href="{{ url_for('restaurant_b.show_restaurants')}}">Go back</a></button>
+            </div>
 
-</fb:login-button>
+        </div>
+    </div>
+</div>
 
-
-        </button>
 {% endblock %}

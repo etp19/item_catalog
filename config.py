@@ -32,15 +32,6 @@ class BaseConfiguration(object):
     # signing the data.
     CSRF_SESSION_KEY = "secret"
 
-    # mail server settings
-    MAIL_SERVER = 'localhost'
-    MAIL_PORT = 25
-    MAIL_USERNAME = None
-    MAIL_PASSWORD = None
-
-    # administrator list
-    ADMINS = ['jon_engelbert@hotmail.com']
-
 
 class TestConfiguration(BaseConfiguration):
     TESTING = True

@@ -1,20 +1,8 @@
 .navbar {
   margin-bottom: 0 !important; }
 
-.jumbotron {
-  min-height: 600px;
-  background-image: url("../img/background.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: none;
-  display: block;
-  margin-bottom: 0; }
-
-.jumbotron h1 {
-  color: white; }
-.jumbotron p {
-  color: white; }
+.navbar-default .navbar-brand {
+  color: #F05f40 !important; }
 
 .hero-image {
   position: relative; }
@@ -34,7 +22,7 @@
     text-align: center; }
   .hero-image .hero-title {
     font-weight: 300;
-    color: #863b24;
+    color: #F05f40;
     font-size: 2.4rem; }
     @media (min-width: 530px) {
       .hero-image .hero-title {
@@ -42,16 +30,11 @@
   .hero-image .hero-subtitle {
     top: 40%;
     margin: 0;
-    color: #0b0b10; }
+    color: white;
+    font-weight: 300; }
 
 .wrapper {
   background-color: #101010 !important; }
-
-.deals {
-  background-color: #eee; }
-
-.demo {
-  width: 100%; }
 
 .top-margin {
   margin-top: 50px !important; }
@@ -83,6 +66,9 @@
 
 .margin-b {
   margin-bottom: 20px; }
+
+.margin-btn {
+  margin-right: 4px; }
 
 #contact {
   background-color: #101010;
@@ -137,5 +123,169 @@ legend {
 
 legend h1 {
   color: #1b6d85 !important; }
+
+.fb-login {
+  color: #F05f40;
+  margin-top: 25%; }
+
+.header-image {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+  background: url("../img/background-opacity.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.headline {
+  padding: 120px 0; }
+
+.headline h1 {
+  font-size: 130px;
+  color: #fff;
+  font-weight: 300; }
+
+.headline h2 {
+  font-size: 77px;
+  color: #fff;
+  font-weight: 200; }
+
+.featurette-divider {
+  margin: 80px 0; }
+
+.featurette {
+  overflow: hidden; }
+
+.featurette-image.pull-left {
+  margin-right: 40px; }
+
+.featurette-image.pull-right {
+  margin-left: 40px; }
+
+.featurette-heading {
+  font-size: 50px; }
+
+footer {
+  margin: 50px 0; }
+
+@media (max-width: 1200px) {
+  .headline h1 {
+    font-size: 140px; }
+
+  .headline h2 {
+    font-size: 63px; }
+
+  .featurette-divider {
+    margin: 50px 0; }
+
+  .featurette-image.pull-left {
+    margin-right: 20px; }
+
+  .featurette-image.pull-right {
+    margin-left: 20px; }
+
+  .featurette-heading {
+    font-size: 35px; } }
+@media (max-width: 991px) {
+  .headline h1 {
+    font-size: 105px; }
+
+  .headline h2 {
+    font-size: 50px; }
+
+  .featurette-divider {
+    margin: 40px 0; }
+
+  .featurette-image {
+    max-width: 50%; }
+
+  .featurette-image.pull-left {
+    margin-right: 10px; }
+
+  .featurette-image.pull-right {
+    margin-left: 10px; }
+
+  .featurette-heading {
+    font-size: 30px; } }
+@media (max-width: 768px) {
+  .container {
+    margin: 0 15px; }
+
+  .featurette-divider {
+    margin: 40px 0; }
+
+  .featurette-heading {
+    font-size: 25px; } }
+@media (max-width: 668px) {
+  .headline h1 {
+    font-size: 70px; }
+
+  .headline h2 {
+    font-size: 32px; }
+
+  .featurette-divider {
+    margin: 30px 0; } }
+@media (max-width: 640px) {
+  .headline {
+    padding: 75px 0 25px 0; }
+
+  .headline h1 {
+    font-size: 60px; }
+
+  .headline h2 {
+    font-size: 30px; } }
+@media (max-width: 375px) {
+  .featurette-divider {
+    margin: 10px 0; }
+
+  .featurette-image {
+    max-width: 100%; }
+
+  .featurette-image.pull-left {
+    margin-right: 0;
+    margin-bottom: 10px; }
+
+  .featurette-image.pull-right {
+    margin-bottom: 10px;
+    margin-left: 0; } }
+.ghost-btn-white {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+  font-weight: 200;
+  margin: 6px 0;
+  margin-top: 40px;
+  margin-right: 12px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 120px; }
+
+.ghost-btn-white:hover, .ghost-btn-white:active {
+  color: #F05f40;
+  border: 1px solid #F05f40; }
+
+.ghost-btn-black {
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 25px;
+  padding: 10px 20px;
+  font-weight: 200;
+  margin: 6px 0;
+  margin-top: 40px;
+  margin-right: 12px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 120px; }
+
+.ghost-btn-black:hover, .ghost-btn-black:active {
+  color: #F05f40;
+  border: 1px solid #F05f40; }
 
 /*# sourceMappingURL=style.css.map */

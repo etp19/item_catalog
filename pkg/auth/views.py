@@ -19,8 +19,6 @@ from flask import make_response
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash, Blueprint
 from flask import session as login_session
 
-# Define the blueprint: 'auth', set its url prefix: app.url/auth
-# mod_auth = Blueprint('auth', __name__, template_folder = '/auth')
 mod_auth = Blueprint('auth', __name__)
 
 
@@ -127,7 +125,7 @@ def fbdisconnect():
     http = httplib2.Http()
     result = http.request(url, 'DELETE')[1]
     if result == '{"success":true}':
-        response = make_response(json.dumps('Successfully disconnected.'), 200)
+        response = make_response(json.dumps('You are successfully logout'), 200)
         response.headers['Content-Type'] = 'application/json'
         del login_session['access_token']
         del login_session['username']

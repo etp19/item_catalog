@@ -12,7 +12,7 @@
 
 {# We also set a default title, usually because we might forget to set one.
    In our sample app, we will most likely just opt not to change it #}
-{% block title %}restaurant app{% endblock %}
+{% block title %}restaurants.com{% endblock %}
 
 {# While we are at it, we also enable fixes for legacy browsers. First we
    import the necessary macros: #}
@@ -37,7 +37,6 @@
           href="{{url_for('static', filename='css/style.css')}}">
 {% endblock %}
 
-
 {% block scripts %}
     {{super()}}
     <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
@@ -53,14 +52,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Restaurants</a>
+        <a class="navbar-brand" href="{{ url_for('index_b.index') }}">Restaurants.com</a>
     </div>
     <img src="">
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-{#            <li><a href="{{ url_for('create_restaurant')}}">New Restaurant</a></li>#}
-            <li><a href="#">welcome</a></li>
+            <li><a href="{{ url_for('api_b.developer_page') }}">For developers</a></li>
             {% if 'username' not in session %}
                 <li><a href="{{ url_for('auth.show_login') }}">login</a></li>
             {% else %}
