@@ -63,6 +63,6 @@ Type **python run.py** to run the Flask web server. In your browser visit **http
 
 - You will probably notice that this project does not have the best style or design that it could have because it is not the real focus on this project however, I use scss to make the structure cleaner, more organized and better for large amount of templates.
   
-- In order to use scss files you can setup a grunt or gulp file, I personally use pycharm file watchers. The scss files are organize in two folders, global and modules and have a file named style that has all imports from the 2 folders, I implemented this way because is easier for the developer to change scss styles in small modules rather than in the whole css file.
+- In order to use scss files you can setup a grunt or gulp file, I personally use pycharm file watchers. The scss files are organized in two folders, global and modules and have a file named style that has all imports from the 2 folders, I implemented this way because is easier for the developer to change scss styles in small modules rather than in the whole css file.
 
 - You may also notice that in the restaurant list there will be a filter button, this is a feature that I want to implement but so far is just a work in progress, images also will be part of the implementation.  
