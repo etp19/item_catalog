@@ -59,7 +59,7 @@ Type **python lotsofmenus.py** to pre-populate the database with restaurants and
 Type **python run.py** to run the Flask web server. In your browser visit **http://localhost:5000** to view the restaurant menu app.  You should be able to view, add, edit, and delete menu items and restaurants.
 
 
-###Note
+### Note
 
 - You will probably notice that this project does not have the best style or design that it could have because it is not the real focus on this project however, I use scss to make the structure cleaner, more organized and better for large amount of templates.
   
