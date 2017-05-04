@@ -10,8 +10,7 @@
 #}
 {%- extends "bootstrap/base.html" %}
 
-{# We also set a default title, usually because we might forget to set one.
-   In our sample app, we will most likely just opt not to change it #}
+
 {% block title %}restaurants.com{% endblock %}
 
 {# While we are at it, we also enable fixes for legacy browsers. First we
@@ -67,7 +66,7 @@
                 <li><a href="{{ url_for('auth.fbdisconnect') }}">logout</a></li>
             {% endif %}
         </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
 </nav>
 {% endblock %}
 <main>

@@ -75,4 +75,3 @@ class User(Base):
             return user.id
         except:
             return None
-

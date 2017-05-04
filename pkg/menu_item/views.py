@@ -1,21 +1,11 @@
 # flask imports
-from flask import Flask, render_template, request, redirect,jsonify, url_for, flash, Blueprint
+from flask import render_template, request, redirect, url_for, flash, Blueprint
 from flask import session as login_session
-import random, string
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask import make_response
-from sqlalchemy import desc
-# from flask_bootstrap import __version__ as FLASK_BOOTSTRAP_VERSION
-
-from pkg.auth.models import User
-from pkg.restaurant.models import Restaurant
-from pkg.menu_item.models import MenuItem
-from pkg.auth.views import login_required
 from pkg import app
-from pkg import db
+from pkg.auth.views import login_required
+from pkg.menu_item.models import MenuItem
+from pkg.restaurant.models import Restaurant
 
-from markupsafe import escape
-# import forms
 from .forms import MenuItems
 
 menu_b = Blueprint('menu_b', __name__)

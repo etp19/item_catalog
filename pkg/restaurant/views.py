@@ -1,23 +1,12 @@
-
-from flask import Flask, render_template, request, redirect,jsonify, url_for, flash, Blueprint
+from flask import render_template, request, redirect, url_for, flash, Blueprint
 from flask import session as login_session
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask import make_response
+from pkg import app
+from pkg.auth.views import login_required
+from pkg.menu_item.models import MenuItem
+from pkg.restaurant.models import Restaurant, RestaurantAddress
 from sqlalchemy import desc
 
-# from flask_bootstrap import __version__ as FLASK_BOOTSTRAP_VERSION
-
-from pkg import app
-from pkg import db
-from pkg.auth.models import User
-from pkg.restaurant.models import Restaurant, RestaurantAddress
-from pkg.menu_item.models import MenuItem
-from pkg.auth.views import login_required
-
-from markupsafe import escape
-
 from .forms import RestaurantForm
-
 
 restaurant_b = Blueprint('restaurant_b', __name__)
 

@@ -1,12 +1,9 @@
 # Import the database object (db) from the main application module
 # We will define this inside /app/__init__.py in the next sections.
-from pkg import db
-from sqlalchemy import Column, ForeignKey, Integer, String, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
-from sqlalchemy import create_engine
 from pkg import app
 from pkg.auth.models import User, Base
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
 
 
 class Restaurant(Base):

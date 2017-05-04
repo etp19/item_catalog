@@ -1,23 +1,14 @@
-
-from flask.ext.sqlalchemy import SQLAlchemy
-
 #IMPORTS FOR THIS STEP
-from oauth2client.client import flow_from_clientsecrets
-from oauth2client.client import FlowExchangeError
-import requests
-from functools import wraps
-
-from pkg import db
-from pkg.auth.models import User
-
 import json
 import random
 import string
+from functools import wraps
 
 import httplib2
 from flask import make_response
-from flask import Flask, render_template, request, redirect, jsonify, url_for, flash, Blueprint
+from flask import render_template, request, redirect, url_for, flash, Blueprint
 from flask import session as login_session
+from pkg.auth.models import User
 
 mod_auth = Blueprint('auth', __name__)
 

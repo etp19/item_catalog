@@ -1,13 +1,9 @@
 # Import the database object (db) from the main application module
 # We will define this inside /app/__init__.py in the next sections.
-from pkg import db
-from sqlalchemy import Column, ForeignKey, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
-from sqlalchemy import create_engine
 from pkg.auth.models import Base, User
 from pkg.restaurant.models import Restaurant
-
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
 
 
 class MenuItem(Base):
@@ -21,8 +17,6 @@ class MenuItem(Base):
     restaurant = relationship(Restaurant)
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
-
-
 
     @property
     def serialize(self):

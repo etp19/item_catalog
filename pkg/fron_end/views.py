@@ -1,6 +1,4 @@
-from flask import Flask, render_template, request, redirect,jsonify, url_for, flash, Blueprint
-from pkg import app
-from markupsafe import escape
+from flask import render_template, Blueprint
 
 index_b = Blueprint('index_b', __name__)
 

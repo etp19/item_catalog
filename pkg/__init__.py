@@ -1,16 +1,12 @@
 # from config import BASE_DIR, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD
 # Import flask and template operators
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask
 from flask import session as login_session
-from flask.ext.login import LoginManager
 # Import SQLAlchemy
 from flask.ext.sqlalchemy import SQLAlchemy
 
 # Import Bootstrap
 from flask_bootstrap import Bootstrap
-
-import json
-import os
 
 app = Flask(__name__)
 db = SQLAlchemy(app)

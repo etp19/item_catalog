@@ -29,6 +29,7 @@
                                 {% if restaurant.user_id == session['user_id'] %}
                                     <li><a href="{{ url_for('restaurant_b.edit_restaurant', restaurant_id = restaurant.id) }}">Edit Restaurant</a></li>
                                     <li><a href="{{ url_for('restaurant_b.delete_restaurant', restaurant_id = restaurant.id) }}">Delete Restaurant</a></li>
+                                    <li><a href="{{ url_for('menu_b.create_menu_restaurant', restaurant_id = restaurant.id) }}">New Menu</a></li>
                                 {% endif %}
                                 {% endif %}
                             </ul>

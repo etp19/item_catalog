@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms.fields import *
-from wtforms.validators import Required, Email, InputRequired, Length, AnyOf, URL
+from wtforms.validators import Email, InputRequired, Length, URL
 
 
 class RestaurantForm(FlaskForm):

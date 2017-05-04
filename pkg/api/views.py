@@ -1,13 +1,7 @@
-from flask import Blueprint, render_template, flash, redirect, url_for, jsonify
-from flask_bootstrap import __version__ as FLASK_BOOTSTRAP_VERSION
-# from flask_nav.elements import Navbar, View, Subgroup, Link, Text, Separator
-from markupsafe import escape
-
+from flask import Blueprint, render_template, jsonify
 from pkg import app
-from pkg import db
-from pkg.auth.models import User
-from pkg.restaurant.models import Restaurant, RestaurantAddress
 from pkg.menu_item.models import MenuItem
+from pkg.restaurant.models import Restaurant, RestaurantAddress
 
 api_b = Blueprint('api_b', __name__)
 
