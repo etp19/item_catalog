@@ -11,7 +11,7 @@
         {{ wtf.form_field(form.description, form_type="horizontal", horizontal_columns=('lg', 4, 4)) }}
 
         <input type="submit" class="btn btn-primary" value="Create">
-        <a class="btn btn-danger" href="#">Cancel</a>
+        <a class="btn btn-danger" href="{{ url_for('restaurant_b.show_restaurants') }}">Cancel</a>
 
 	</form>
     </div>
