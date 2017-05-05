@@ -4,6 +4,7 @@ from pkg.auth.models import Base, User
 from pkg.restaurant.models import Restaurant
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
+from sqlalchemy.orm import backref
 
 
 class MenuItem(Base):
@@ -14,7 +15,7 @@ class MenuItem(Base):
     description = Column(String(250))
     price = Column(String(8))
     restaurant_id = Column(Integer, ForeignKey('restaurant.id'))
-    restaurant = relationship(Restaurant)
+    restaurant = relationship(Restaurant, backref=backref("children", cascade="all,delete"))
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
 
